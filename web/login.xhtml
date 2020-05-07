@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+    <title>Title</title>
+</h:head>
+<h:body>
+    <f:view>
+        <h:form id="loginForm">
+            Login: <h:inputText value="#{loginBackingBean.username}"/>
+            <p/>
+            Password: <h:inputSecret value="#{loginBackingBean.password}"/>
+            <p/>
+            <h:commandButton value="Submit" action="#{loginBackingBean.doLogin}"/>
+        </h:form>
+        <h:messages for="loginForm"/>
+    </f:view>
+</h:body>
+</html>
