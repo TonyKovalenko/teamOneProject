@@ -1,4 +1,6 @@
 .idea/
 out/
 target/
+lib/
+META-INF/
 teamOneProject.iml
