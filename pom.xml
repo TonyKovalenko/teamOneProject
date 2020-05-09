@@ -6,7 +6,8 @@
 
     <groupId>teamOne</groupId>
     <artifactId>teamOneProject</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
+    <packaging>war</packaging>
 
     <build>
         <plugins>
@@ -17,6 +18,13 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <webXml>web\WEB-INF\web.xml</webXml>
                 </configuration>
             </plugin>
         </plugins>
