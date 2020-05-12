@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition template="template.xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core">
+    <ui:define name="headline">Please do login!</ui:define>
+    <ui:define name="body">
+        <h:form>
+            <h:panelGrid>
+                <h:outputText value="Username"/>
+                <h:inputText value="#{loginBackingBean.username}" />
+                <h:outputText value="Password"/>
+                <h:inputSecret  value="#{loginBackingBean.password}" />
+                <h:commandButton value="Submit" action="#{loginBackingBean.doLogin}">
+                </h:commandButton>
+            </h:panelGrid>
+        </h:form>
+    </ui:define>
+</ui:composition>
+
+
+
+
+<!--<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -19,4 +41,4 @@
         <h:messages for="loginForm"/>
     </f:view>
 </h:body>
-</html>
+</html>-->
