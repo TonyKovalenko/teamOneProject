@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+}
+
+body{
+    background: url("#{resource['css/img/petals.jpg']}") no-repeat;
+    background-size: 100%;
+    height: auto;
+}
+
+html, body, .content{
+    height: 100%;
+    text-align: center;
+}
+
+form{
+    display: inline;
+}
+
+form table{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+table *{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.content{
+    width: auto;
+    margin-left: 16%;
+    margin-right: 16%;
+    border-left: 8px double #FF3333;
+    border-right: 8px double #FF3333;
+    background: #FFEEEE;
+}
+
+.headline{
+    border-bottom: 1px solid orange;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+input[type=submit]{
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px 6px;
+    outline: none;
+    border-width: 2px 2px;
+    border-style: solid none;
+    border-color: #FDBE33;
+    border-radius: 2px;
+    background: linear-gradient(#FFCC00, #FFAA16);
+    transition: 0.2s;
+    font-size: 22px;
+}
+input[type=submit]:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00;  }
+input[type=submit]:active { background: linear-gradient(#f59500, #f5ae00) #f59500;  }
