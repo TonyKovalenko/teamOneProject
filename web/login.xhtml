@@ -1,44 +1,18 @@
 <ui:composition template="template.xhtml"
                 xmlns:ui="http://java.sun.com/jsf/facelets"
                 xmlns:h="http://java.sun.com/jsf/html"
-                xmlns:f="http://java.sun.com/jsf/core">
+>
     <ui:define name="headline">Please do login!</ui:define>
     <ui:define name="body">
-        <h:form>
+        <form method="POST" id="login" action="j_security_check">
             <h:panelGrid>
                 <h:outputText value="Username"/>
-                <h:inputText value="#{loginBackingBean.username}" />
+                <h:inputText id="j_username" name="j_username"/>
                 <h:outputText value="Password"/>
-                <h:inputSecret  value="#{loginBackingBean.password}" />
-                <h:commandButton value="Submit" action="#{loginBackingBean.doLogin}">
+                <h:inputSecret id="j_password" name="j_password"/>
+                <h:commandButton value="Log In">
                 </h:commandButton>
             </h:panelGrid>
-        </h:form>
+        </form>
     </ui:define>
 </ui:composition>
-
-
-
-
-<!--<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html">
-<h:head>
-    <title>Title</title>
-</h:head>
-<h:body>
-    <f:view>
-        <h:form id="loginForm">
-            Login: <h:inputText value="#{loginBackingBean.username}"/>
-            <p/>
-            Password: <h:inputSecret value="#{loginBackingBean.password}"/>
-            <p/>
-            <h:commandButton value="Submit" action="#{loginBackingBean.doLogin}"/>
-        </h:form>
-        <h:messages for="loginForm"/>
-    </f:view>
-</h:body>
-</html>-->

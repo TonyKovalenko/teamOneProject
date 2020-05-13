@@ -1,0 +1,16 @@
+<ui:composition template="../template.xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core">
+    <ui:insert name="">OK.</ui:insert>
+    <ui:define name="body">
+        <f:view>
+            <br/>
+            <h:outputLabel value="Logged in as #{request.remoteUser}"/>
+            <br/>
+            <h:form>
+                <h:commandButton value="Logout" action="#{logoutBackingBean.doLogout}"/>
+            </h:form>
+        </f:view>
+    </ui:define>
+</ui:composition>
