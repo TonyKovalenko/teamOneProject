@@ -48,11 +48,16 @@
             <url-pattern>/app/*</url-pattern>
         </web-resource-collection>
         <auth-constraint>
+            <role-name>user_role</role-name>
+            <role-name>tutor_role</role-name>
             <role-name>admin_role</role-name>
         </auth-constraint>
     </security-constraint>
     <security-role>
         <role-name>admin_role</role-name>
+    </security-role>
+    <security-role>
+        <role-name>tutor_role</role-name>
     </security-role>
     <security-role>
         <role-name>user_role</role-name>
