@@ -17,7 +17,6 @@ public class AuthorizationFilter implements Filter {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse resp = (HttpServletResponse) response;
         String pageRequested = req.getRequestURI();
-        System.out.println("GOOOOOOOOOOOOOOT CAAAAAAAAAAAALLLLLLLLLED");
         if (pageRequested.contains("login.xhtml")) {
             resp.sendRedirect("app/index.xhtml");
         } else {
