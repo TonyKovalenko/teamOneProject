@@ -5,7 +5,8 @@
 }
 
 body{
-    background: url("#{resource['css/img/petals.jpg']}") no-repeat;
+    background: #AAAAAA;
+    /*background: url("#{resource['css/img/petals.jpg']}") no-repeat;*/
     background-size: 100%;
     height: auto;
 }
@@ -16,11 +17,10 @@ html, body, .content{
 }
 
 form{
-    display: inline;
+    display: inline-block;
 }
 
 form table{
-    margin-left: 10%;
     margin-top: 5%;
 }
 
@@ -29,33 +29,45 @@ table *{
     margin-bottom: 5px;
 }
 
+h2{
+    vertical-align: center;
+}
+
 .content{
     width: auto;
     margin-left: 16%;
     margin-right: 16%;
-    border-left: 8px double #FF3333;
-    border-right: 8px double #FF3333;
-    background: #FFEEEE;
+    border-left: 4px solid #555555;
+    border-right: 4px solid #555555;
+    background: #DDDDDD;
 }
 
 .headline{
-    border-bottom: 1px solid orange;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 3%;
+    height: 5em;
+    border-bottom: 1px solid black;
+    /*padding-top: 20px;*/
+    /*padding-bottom: 20px;*/
 }
 
 input[type=submit]{
     display: inline-block;
-    text-decoration: none;
     padding: 3px 6px;
-    outline: none;
-    border-width: 2px 2px;
-    border-style: solid none;
-    border-color: #FDBE33;
-    border-radius: 2px;
-    background: linear-gradient(#FFCC00, #FFAA16);
-    transition: 0.2s;
-    font-size: 22px;
+    font-size: 20px;
 }
-input[type=submit]:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00;  }
-input[type=submit]:active { background: linear-gradient(#f59500, #f5ae00) #f59500;  }
+
+.corner_panel{
+    line-height: 1.3em;
+    padding: 5px;
+    padding-top: 1.7%;
+    height: 5em;
+    position: absolute;
+    top: 0;
+    right: 16%;
+    text-decoration: none;
+    font-weight: normal;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 10em;
+}
