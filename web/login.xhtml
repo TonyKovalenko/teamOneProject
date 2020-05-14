@@ -2,8 +2,13 @@
                 xmlns:ui="http://java.sun.com/jsf/facelets"
                 xmlns:h="http://java.sun.com/jsf/html"
 >
-    <ui:define name="headline">Sign up</ui:define>
+    <ui:define name="headline">
+        <div style="line-height: 3em; font-size: 30px;">
+            Sign up
+        </div>
+    </ui:define>
     <ui:define name="body">
+        <br/>
         <form method="POST" id="login" action="j_security_check">
             <h:panelGrid>
                 <h:outputText value="Username"/>
