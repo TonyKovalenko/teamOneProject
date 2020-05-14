@@ -52,19 +52,17 @@ h2{
 
 input[type=submit]{
     display: inline-block;
-    padding: 3px 6px;
+    padding: 3px 10px;
     font-size: 20px;
 }
 
 .corner_panel{
     line-height: 1.3em;
-    padding: 5px;
-    padding-top: 1.7%;
+    padding: 1.7% 17px 5px;
     height: 5em;
     position: absolute;
     top: 0;
     right: 16%;
-    text-decoration: none;
     font-weight: normal;
     border: 1px solid black;
     margin-left: auto;

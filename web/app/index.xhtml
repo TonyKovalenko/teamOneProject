@@ -4,12 +4,12 @@
                 xmlns:f="http://java.sun.com/jsf/core">
     <ui:define name="headline" class="headline">
             <div style="line-height: 3em;">Homepage</div>
-            <div class="corner_panel">
-                <h:outputLabel value="Logged in "/><br/>
-                <h:outputLabel value="as #{request.remoteUser}"/>
+            <div class="corner_panel" style="font-size: 26px;">
+                <h:outputLabel value="Logged in as"/><br/>
+                <h:outputLabel value="#{request.remoteUser}"/>
                 <br/>
                 <h:form>
-                    <h:commandButton style="margin:2px;" value="Logout" action="#{logoutBackingBean.doLogout}"/>
+                    <h:commandButton style="margin:2px; margin-top: 7px;" value="Logout" action="#{logoutBackingBean.doLogout}"/>
                 </h:form>
             </div>
     </ui:define>
