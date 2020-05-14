@@ -41,7 +41,7 @@
             <form-error-page>/login.xhtml</form-error-page>
         </form-login-config>
     </login-config>
-    
+
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>Protected resource</web-resource-name>
