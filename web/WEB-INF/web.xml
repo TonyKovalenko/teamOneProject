@@ -30,7 +30,7 @@
         <servlet-name>Faces Servlet</servlet-name>
     </filter-mapping>
     <welcome-file-list>
-        <welcome-file>/app/index.xhtml</welcome-file>
+        <welcome-file>app/index.xhtml</welcome-file>
     </welcome-file-list>
 
     <login-config>
