@@ -10,6 +10,11 @@ public class LogoutBackingBean {
 
     public String doLogout() {
         FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
+        return sendRedirectURL();
+    }
+
+    public String sendRedirectURL() {
         return "/login?faces-redirect=true";
     }
+
 }
